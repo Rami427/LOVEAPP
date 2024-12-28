@@ -1,0 +1,20 @@
+document.getElementById('notifyButton').addEventListener('click', function() {
+  const name = document.getElementById('nameInput').value.trim();
+
+  if (name) {
+    // إنشاء رسالة مخصصة بناءً على الاسم المدخل
+    const message = `مرحبًا ${name}! لدينا إشعار خاص لك: الحياة جميلة بوجودك.`;
+    
+    // عرض الإشعار
+    document.getElementById('notificationMessage').textContent = message;
+    document.getElementById('notification').classList.remove('hidden');
+  } else {
+    // إذا كان الحقل فارغًا، إظهار تنبيه
+    alert("من فضلك أدخل اسمك أولاً.");
+  }
+});
+
+// إغلاق الإشعار
+function closeNotification() {
+  document.getElementById('notification').classList.add('hidden');
+}

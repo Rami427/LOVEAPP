@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إشعار مخصص</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>مرحبا بك في تطبيق الإشعار المخصص!</h1>
+    <p>أدخل اسمك لتلقي إشعار خاص:</p>
+    <input type="text" id="nameInput" placeholder="أدخل اسمك هنا" />
+    <button id="notifyButton">أرسل إشعار</button>
+    <div id="notification" class="notification hidden">
+      <span id="notificationMessage"></span>
+      <button class="closeButton" onclick="closeNotification()">إغلاق</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
